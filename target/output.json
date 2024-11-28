@@ -1,0 +1,917 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-13T16:18:43.970Z",
+        "line": 4,
+        "name": "Get User logtoken from login endpoint",
+        "description": "",
+        "id": "login-module-api-automation;get-user-logtoken-from-login-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 739517100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add header",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC001_LoginStep.userAddHeader()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 253262000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add basic authentication for login",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC001_LoginStep.userAddBasicAuthenticationForLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1978556900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User send \"POST\" request for login endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC001_LoginStep.userSendRequestForLoginEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4492600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 378770100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should verify the login response body firstName present as \"Greens\" and get the logtoken saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Greens\"",
+                  "offset": 64
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifyTheLoginResponseBodyFirstNamePresentAsAndGetTheLogtokenSaved(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Login Module API automation",
+    "description": "",
+    "id": "login-module-api-automation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC001_Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-13T16:18:47.439Z",
+        "line": 3,
+        "name": "Verify User Get StateList  through api",
+        "description": "",
+        "id": "verify-statelist-api;verify-user-get-statelist--through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3059200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User add headers for to StateList",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC002_StateListStep.userAddHeadersForToStateList()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 477440800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User send \"GET\" request for StateList endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC002_StateListStep.userSendRequestForStateListEndpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2029900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23346300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should verify the stateList response message matches \"Tamil Nadu\" and saved state id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Tamil Nadu\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC002_StateListStep.userShouldVerifyTheStateListResponseMessageMatchesAndSavedStateId(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@state"
+          }
+        ]
+      }
+    ],
+    "name": "Verify StateList API",
+    "description": "",
+    "id": "verify-statelist-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC002_StateList.feature",
+    "tags": [
+      {
+        "name": "@state",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-13T16:18:48.032Z",
+        "line": 4,
+        "name": "Verify User Get City list  through api",
+        "description": "",
+        "id": "verify-citylist-api;verify-user-get-city-list--through-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5055700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add header  for to get CityList",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC003_CityListStep.userAddHeaderForToGetCityList()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 130149400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add request body state id for  get city list",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC003_CityListStep.userAddRequestBodyStateIdForGetCityList()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 465652000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User send \"POST\" request for CityList endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC003_CityListStep.userSendRequestForCityListEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 996700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 59245400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User verify the cityList response message matches \"Adikaratti\" and saved city id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Adikaratti\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC003_CityListStep.userVerifyTheCityListResponseMessageMatchesAndSavedCityId(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@city"
+          }
+        ]
+      }
+    ],
+    "name": "Verify CityList API",
+    "description": "",
+    "id": "verify-citylist-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC003_CityList.feature",
+    "tags": [
+      {
+        "name": "@city",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-13T16:18:48.760Z",
+        "line": 14,
+        "name": "Verify add user address to the application through api",
+        "description": "",
+        "id": "verify-address-api;verify-add-user-address-to-the-application-through-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1470000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add header and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userAddHeaderAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14396500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User add request body for add new address \"Mani\",\"Raj\",\"9944152058\",\"Prince\",\"123\",\"11\",\"101\",\"600081\",\"Chennai\",and \"Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mani\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Raj\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"9944152058\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"Prince\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"11\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"101\"",
+                  "offset": 88
+                },
+                {
+                  "val": "\"600081\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 103
+                },
+                {
+                  "val": "\"Home\"",
+                  "offset": 117
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userAddRequestBodyForAddNewAddressAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 460638700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User send \"POST\" request for addUserAddress endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userSendRequestForAddUserAddressEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3504100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should verify the addUserAddress response message matches \"Address added successfully\" and get the address id saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address added successfully\"",
+                  "offset": 63
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userShouldVerifyTheAddUserAddressResponseMessageMatchesAndGetTheAddressIdSaved(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@g"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-13T16:18:49.272Z",
+        "line": 25,
+        "name": "Verify update user address to the application through api",
+        "description": "",
+        "id": "verify-address-api;verify-update-user-address-to-the-application-through-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 996300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User add header and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userAddHeaderAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Step [User add request body to update new address {string},{string},{string},{string},{string},{string},{string},{string},{string} and {string}] is defined with 11 parameters at \u0027com.omrbranch.stepdefinition.TC004_AddressStep.userAddRequestBodyToUpdateNewAddressAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)\u0027.\nHowever, the gherkin step has 10 arguments:\n * \"Mani\"\n * \"Raj\"\n * \"9944152058\"\n * \"Prince\"\n * \"123\"\n * \"11\"\n * \"22\"\n * \"600081\"\n * \"Chennai\"\n * \"Home\"\nStep text: User add request body to update new address \"Mani\",\"Raj\",\"9944152058\",\"Prince\",\"123\",\"11\",\"22\",\"600081\",\"Chennai\" and \"Home\"\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$WithStepDescriptions.run(PickleRunners.java:110)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:530)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:758)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:453)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)\r\n",
+              "duration": 1995700,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "User add request body to update new address \"Mani\",\"Raj\",\"9944152058\",\"Prince\",\"123\",\"11\",\"22\",\"600081\",\"Chennai\" and \"Home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mani\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"Raj\"",
+                  "offset": 51
+                },
+                {
+                  "val": "\"9944152058\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Prince\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"123\"",
+                  "offset": 79
+                },
+                {
+                  "val": "\"11\"",
+                  "offset": 85
+                },
+                {
+                  "val": "\"22\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"600081\"",
+                  "offset": 95
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"Home\"",
+                  "offset": 118
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userAddRequestBodyToUpdateNewAddressAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User send \"PUT\" request for update addUserAddress endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userSendRequestForUpdateAddUserAddressEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User verify the update address response message matches \"Address updated successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address updated successfully\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userVerifyTheUpdateAddressResponseMessageMatches(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@g"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-13T16:18:49.324Z",
+        "line": 27,
+        "name": "Verify Get User Address to the application through API",
+        "description": "",
+        "id": "verify-address-api;verify-get-user-address-to-the-application-through-api",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1994200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User add Headers and Bearer authorization for accessing Get address endpoints",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userAddHeadersAndBearerAuthorizationForAccessingGetAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 381283800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User Send \"GET\" request for GetUserAddress endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userSendRequestForGetUserAddressEndpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: verify Statuscode expected:\u003c401\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(CommonStep.java:16)\r\n\tat ✽.User should verify the status code is 200(file:///C:/Users/wel/eclipse-workspace/OMRBranchGroceryAPIProject/src/test/resources/Features/TC004_Address.feature:30)\r\n",
+              "duration": 7443400,
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1011200,
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "User verify the GetUserAddress response message matches \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userVerifyTheGetUserAddressResponseMessageMatches(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@g"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-11-13T16:18:49.773Z",
+        "line": 33,
+        "name": "Verify Delete User Address to the application through API",
+        "description": "",
+        "id": "verify-address-api;verify-delete-user-address-to-the-application-through-api",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2990400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User add header and bearer authorization for accessing address endpoints",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userAddHeaderAndBearerAuthorizationForAccessingAddressEndpoints()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15948400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User add request body for address id",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userAddRequestBodyForAddressId()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 479059300,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User Send \"DELETE\" request for DeleteAddress endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userSendRequestForDeleteAddressEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2398500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13471600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User verify the DeleteAddress response message matches \"Address deleted successfully\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Address deleted successfully\"",
+                  "offset": 55
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC004_AddressStep.userVerifyTheDeleteAddressResponseMessageMatches(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@g"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Address API",
+    "description": "",
+    "id": "verify-address-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC004_Address.feature",
+    "tags": [
+      {
+        "name": "@g",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-11-13T16:18:50.353Z",
+        "line": 13,
+        "name": "Verify User Search product through api",
+        "description": "",
+        "id": "verify-product-search-api;verify-user-search-product-through-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2990400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User add headers for search product",
+            "match": {
+              "location": "com.omrbranch.stepdefinition.TC005_ProductSearchStep.userAddHeadersForSearchProduct()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17952100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User add request body for search product \"nuts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nuts\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC005_ProductSearchStep.userAddRequestBodyForSearchProduct(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 502986200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User send \"POST\" request for search product endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC005_ProductSearchStep.userSendRequestForSearchProductEndpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: verify Statuscode expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(CommonStep.java:16)\r\n\tat ✽.User should verify the status code is 200(file:///C:/Users/wel/eclipse-workspace/OMRBranchGroceryAPIProject/src/test/resources/Features/TC005_ProductSearch.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User should verify the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.CommonStep.userShouldVerifyTheStatusCodeIs(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User should verify the search product response message matches \"OK\" and category id saved",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OK\"",
+                  "offset": 63
+                }
+              ],
+              "location": "com.omrbranch.stepdefinition.TC005_ProductSearchStep.userShouldVerifyTheSearchProductResponseMessageMatchesAndCategoryIdSaved(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@i"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Product Search API",
+    "description": "",
+    "id": "verify-product-search-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/TC005_ProductSearch.feature",
+    "tags": [
+      {
+        "name": "@i",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
